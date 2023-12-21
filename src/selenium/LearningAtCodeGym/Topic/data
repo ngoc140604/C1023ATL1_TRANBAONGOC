@@ -1,0 +1,18 @@
+following-sibling: cùng cấp
+following: có thể lấy element con
+descendant: Lấy tk element cháu as the same //
+../../: Truy cập từ tk con ra tk cha
+     //input fullname
+    //label[text()='Full Name']/following::input
+    // inputEmail
+    //div[@id='currentAddress-wrapper']/preceding::input/..
+    //current address
+    //div[@id='permanentAddress-wrapper']/preceding-sibling::div[@id='currentAddress-wrapper']
+    //permanent address
+    //div[@id='currentAddress-wrapper']/following-sibling::div
++Actions:
+double click(): Nhấn đúp vào đối tượng
+ClickAndHold: Nhấn lâu và không nhả chuột
+build().perform()
+hover(): Di chuyển chuột vào vị trí được chỉ định
+DragAndDrop: Giữ và thả
