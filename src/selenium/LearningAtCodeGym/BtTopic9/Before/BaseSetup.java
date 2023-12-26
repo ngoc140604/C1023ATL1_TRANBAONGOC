@@ -1,7 +1,7 @@
 package selenium.LearningAtCodeGym.BtTopic9.Before;
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -25,9 +25,9 @@ public class BaseSetup {
             case "chrome":
                 driver = initChromeDriver(appUrl);
                 break;
-            case "firefox":
-                driver = initFireFoxDriver(appUrl);
-                break;
+//            case "firefox":
+//                driver = initFireFoxDriver(appUrl);
+//                break;
             default:
                 System.out.println(browserType + "invalid...");
                 driver = initChromeDriver(appUrl);
@@ -46,16 +46,16 @@ public class BaseSetup {
         return driver;
     }
 
-    private WebDriver initFireFoxDriver(String appUrl) {
-        System.out.println("Launching FireFox Browser");
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
-        driver.manage().window().maximize();
-        driver.navigate().to(appUrl);
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        return driver;
-    }
+//    private WebDriver initFireFoxDriver(String appUrl) {
+//        System.out.println("Launching FireFox Browser");
+//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ngoc\\DataSelenium\\b1\\browserdriver\\chromedriver.exe");
+//        driver = new FirefoxDriver();
+//        driver.manage().window().maximize();
+//        driver.navigate().to(appUrl);
+//        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//        return driver;
+//    }
 
 
     //initializeTestBaseSetup
