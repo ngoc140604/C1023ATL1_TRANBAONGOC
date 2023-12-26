@@ -16,3 +16,12 @@ ClickAndHold: Nhấn lâu và không nhả chuột
 build().perform()
 hover(): Di chuyển chuột vào vị trí được chỉ định
 DragAndDrop: Giữ và thả
+
+Môi trường: Dev -> Test -> Staging/Demo as the same with Production(Server chứa dữ liệu riêng) ->
+Làm giống môi trường Production nhất có thể -> Production (Môi trường client sử dụng).
+Fluent wait:
+là một dạng của Explicitwait cung cấp khả năng linh hoạt
+Cho phép xác định điều kiện chờ, thời gian chờ, tần suất kiểm tra và điều kiện ngoại lệ
+Sử dụng wait
+
+

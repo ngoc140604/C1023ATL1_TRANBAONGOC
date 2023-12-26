@@ -1,4 +1,4 @@
-package selenium.LearningAtCodeGym.BtDemo.Page;
+package selenium.LearningAtCodeGym.BtDemoTopic6.Page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -1,13 +1,14 @@
-package selenium.LearningAtCodeGym.BtDemo.SetUp;
+package selenium.LearningAtCodeGym.BtTopic7;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import java.util.concurrent.TimeUnit;
 
-public class BeforeTest {
+public class Before {
     WebDriver driver;
     Actions actions;
     public WebDriver getDriver(){
@@ -20,10 +21,11 @@ public class BeforeTest {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get("https://demo.guru99.com/V1/index.php");
+        driver.get("http://live.techpanda.org/index.php/mobile.html");
         return driver;
 
     }
+    @AfterClass
     public void afterTest() {
         if(driver!=null){
             driver.quit();
